@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>重绘和重排</title>
+    <url>/2021/04/13/%E9%87%8D%E7%BB%98%E5%92%8C%E9%87%8D%E6%8E%92/</url>
+    <content><![CDATA[<p>HTML页面进行重绘和重排（回流）</p>
+<a id="more"></a>
+
+<h3 id="浏览器运行机制"><a href="#浏览器运行机制" class="headerlink" title="浏览器运行机制"></a>浏览器运行机制</h3><p>1 构建DOM树    生成内容树（html结构）</p>
+<p>2 构建渲染树      css样式</p>
+<p>3 布局渲染树      从根节点(&lt;html&gt;)递归调用，计算每一个元素的大小，位置等；给出每个节点所在屏幕上出现的确定坐标</p>
+<p>4 绘制渲染树      遍历渲染树，使用UI层来绘制每个节点</p>
+<h3 id="重绘"><a href="#重绘" class="headerlink" title="重绘"></a>重绘</h3><p>​        重绘指的是，一个元素外观（颜色、背景）的改变，所触发的浏览器行为，即浏览器会根据新属性重新绘制页面</p>
+<h3 id="重排（回流）"><a href="#重排（回流）" class="headerlink" title="重排（回流）"></a>重排（回流）</h3><p>​        重排指的是，一个元素或多个元素因为规模尺寸、布局、隐藏等改变页面需要重新构建页面。注意：每个页面至少需要回流一次，就是第一次加载的时候。</p>
+<p>重排一定会导致重绘！！</p>
+<h3 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h3><p>1 浏览器自己的优化：浏览器会维护1个队列，</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+  </entry>
+  <entry>
     <title>The farewell</title>
     <url>/2021/03/09/The-farewell/</url>
     <content><![CDATA[<p>纽约一声大喝，惊扰长春飞鸟</p>
@@ -8,12 +27,15 @@
 
 <p>YOU THINK ONE’S LIFE BELONGS TO ONESELF.</p>
 <img src="/2021/03/09/The-farewell/t1.jpg" class>]]></content>
+      <categories>
+        <category>电影</category>
+      </categories>
       <tags>
         <tag>电影</tag>
       </tags>
   </entry>
   <entry>
-    <title>Fifth 选择结构程序设计</title>
+    <title>5 选择结构程序设计</title>
     <url>/2020/06/28/%E7%AC%AC%E4%BA%94%E7%AB%A0-%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</url>
     <content><![CDATA[<p>关系运算符和关系表达式、逻辑运算符和逻辑表达式、if语句、switch语句</p>
 <a id="more"></a>
@@ -60,12 +82,15 @@
 </li>
 </ul>
 ]]></content>
+      <categories>
+        <category>考研笔记</category>
+      </categories>
       <tags>
         <tag>考研</tag>
       </tags>
   </entry>
   <entry>
-    <title>Fourth C语句概述</title>
+    <title>4 C语句概述</title>
     <url>/2020/06/27/%E7%AC%AC%E5%9B%9B%E7%AB%A0-C%E8%AF%AD%E5%8F%A5%E6%A6%82%E8%BF%B0/</url>
     <content><![CDATA[<p>概述，赋值语句，输入输出，格式输出等</p>
 <a id="more"></a>
@@ -245,12 +270,15 @@
 <h4 id="主要知识点"><a href="#主要知识点" class="headerlink" title="主要知识点"></a>主要知识点</h4><p>字符数据的输入输出函数</p>
 <p>格式输入输出函数：9个格式控制符的使用</p>
 ]]></content>
+      <categories>
+        <category>考研笔记</category>
+      </categories>
       <tags>
         <tag>考研</tag>
       </tags>
   </entry>
   <entry>
-    <title>Third 数据类型、运算符和表达式</title>
+    <title>3 数据类型、运算符和表达式</title>
     <url>/2020/06/24/%E7%AC%AC%E4%B8%89%E7%AB%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E3%80%81%E8%BF%90%E7%AE%97%E7%AC%A6%E5%92%8C%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
     <content><![CDATA[<p>第三章 数据类型、运算符和表达式</p>
 <a id="more"></a>
@@ -433,12 +461,15 @@
 <p>一般形式：表达式1，表达式2</p>
 <p>先求表达式1，再求表达式2，整个逗号表达式的值是<strong>表达式2的最终结果</strong></p>
 ]]></content>
+      <categories>
+        <category>考研笔记</category>
+      </categories>
       <tags>
         <tag>考研</tag>
       </tags>
   </entry>
   <entry>
-    <title>Second 算法</title>
+    <title>2 算法</title>
     <url>/2020/06/24/%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E7%AE%97%E6%B3%95/</url>
     <content><![CDATA[<p>第二章 算法</p>
 <a id="more"></a>
@@ -511,12 +542,15 @@
 </ul>
 <h4 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h4><p>主要知识点：<strong>算法的表示</strong></p>
 ]]></content>
+      <categories>
+        <category>考研笔记</category>
+      </categories>
       <tags>
         <tag>考研</tag>
       </tags>
   </entry>
   <entry>
-    <title>First 考情分析</title>
+    <title>1 考情分析</title>
     <url>/2020/06/23/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E8%80%83%E6%83%85%E5%88%86%E6%9E%90/</url>
     <content><![CDATA[<p>考情分析、复习方法和概述 + 第一章</p>
 <a id="more"></a>
@@ -632,6 +666,9 @@
 <li>运行可执行目标程序</li>
 </ul>
 ]]></content>
+      <categories>
+        <category>考研笔记</category>
+      </categories>
       <tags>
         <tag>考研</tag>
       </tags>
@@ -656,7 +693,7 @@
 </li>
 </ol>
 <h5 id="链路管理"><a href="#链路管理" class="headerlink" title="链路管理"></a>链路管理</h5><p>数据链路层连接的“建立、维持、释放”过程称为链路管理。主要用于有确认的面向连接服务。</p>
-<h5 id="帧定界、帧同步与透明传输"><a href="#帧定界、帧同步与透明传输" class="headerlink" title="帧定界、帧同步与透明传输"></a>帧定界、帧同步与透明传输</h5><p><a href="https://blog.csdn.net/cainv89/article/details/50603699?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase" target="_blank" rel="noopener">https://blog.csdn.net/cainv89/article/details/50603699?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase</a></p>
+<h5 id="帧定界、帧同步与透明传输"><a href="#帧定界、帧同步与透明传输" class="headerlink" title="帧定界、帧同步与透明传输"></a>帧定界、帧同步与透明传输</h5><p><a href="https://blog.csdn.net/cainv89/article/details/50603699?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase">https://blog.csdn.net/cainv89/article/details/50603699?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&amp;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase</a></p>
 <p>我们需要对网络层（boss）的<strong>分组封装成帧</strong>，以帧传输。将一段数据的<strong>前后</strong>分别添加首部、尾部就构成帧。首尾部包含很多<strong>控制信息</strong>，主要作用是确定帧的界限，即<strong>帧定界</strong>。<strong>帧同步</strong>：接收方能从接收到的二进制比特流中区分出帧的起始与终止。</p>
 <p><strong>透明传输</strong>：不管所传输的数据是什么样的比特组合，都应当能在链路上传送。</p>
 <h5 id="流量控制"><a href="#流量控制" class="headerlink" title="流量控制"></a>流量控制</h5><p>控制发送速率。（大题必考！！！后面会有流量控制与可靠传输机制详细讲解，<u>停等协议</u>和<u>滑动窗口协议</u>）。发送方发送速度大于接收方接收速度，控制发送方的发送速率。</p>
@@ -664,6 +701,9 @@
 <h4 id="差错控制"><a href="#差错控制" class="headerlink" title="差错控制"></a>差错控制</h4><p>差错检测防止差错的无效数据帧，浪费网络资源</p>
 <h5 id="检错编码"><a href="#检错编码" class="headerlink" title="检错编码"></a>检错编码</h5><h5 id="纠错编码"><a href="#纠错编码" class="headerlink" title="纠错编码"></a>纠错编码</h5><p>海明码</p>
 ]]></content>
+      <categories>
+        <category>考研笔记</category>
+      </categories>
       <tags>
         <tag>考研803</tag>
       </tags>
@@ -716,6 +756,9 @@
 <li>星型拓扑结构的中间就是集线器。</li>
 </ol>
 ]]></content>
+      <categories>
+        <category>考研笔记</category>
+      </categories>
       <tags>
         <tag>考研803</tag>
       </tags>
@@ -829,6 +872,9 @@
 <li>调幅+调相</li>
 </ol>
 ]]></content>
+      <categories>
+        <category>考研笔记</category>
+      </categories>
       <tags>
         <tag>考研803</tag>
       </tags>
@@ -897,10 +943,13 @@
 
 <p>总结下：</p>
 <ol>
-<li>TCP/IP参考模型是首先由ARPANET所使用的<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=301274&ss_c=ssc.citiao.link" target="_blank" rel="noopener">网络体系结构</a>。这个体系结构在它的两个主要协议出现以后被称为TCP/IP参考模型(TCP/IP Reference Model)。这一网络协议共分为四层：<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=166609564&ss_c=ssc.citiao.link" target="_blank" rel="noopener">网络访问层</a>、<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=62691577&ss_c=ssc.citiao.link" target="_blank" rel="noopener">互联网层</a>、传输层和应用层</li>
+<li>TCP/IP参考模型是首先由ARPANET所使用的<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=301274&ss_c=ssc.citiao.link">网络体系结构</a>。这个体系结构在它的两个主要协议出现以后被称为TCP/IP参考模型(TCP/IP Reference Model)。这一网络协议共分为四层：<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=166609564&ss_c=ssc.citiao.link">网络访问层</a>、<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=62691577&ss_c=ssc.citiao.link">互联网层</a>、传输层和应用层</li>
 <li>TCP/IP协议不是 TCP和 IP这两个协议的合称，而是指因特网整个TCP/IP协议族。</li>
 </ol>
 ]]></content>
+      <categories>
+        <category>考研笔记</category>
+      </categories>
       <tags>
         <tag>考研803</tag>
       </tags>
@@ -975,6 +1024,9 @@
 </tr>
 </tbody></table>
 ]]></content>
+      <categories>
+        <category>考研笔记</category>
+      </categories>
       <tags>
         <tag>考研803</tag>
       </tags>
@@ -986,7 +1038,7 @@
 <a id="more"></a>
 
 <blockquote>
-<p>所有内容資料來自<a href="https://www.csdn.net/" target="_blank" rel="noopener"><img src="https://csdnimg.cn/cdn/content-toolbar/csdn-logo_.png?v=20190924.1" alt="img"></a></p>
+<p>所有内容資料來自<a href="https://www.csdn.net/"><img src="https://csdnimg.cn/cdn/content-toolbar/csdn-logo_.png?v=20190924.1" alt="img"></a></p>
 </blockquote>
 <p>前后端分离趋势，前端负责数据展示、页面动态效果等，后端负责编写应用程序接口，功页面、第三方等调用。有很多情况是，前端已经写好页面，一直等待后端接口的联调。所以现在就有造价数据的工具mockjs</p>
 <p><strong>jquery 中 使用 mockjs来拦截ajax请求，并返回假数据。</strong></p>
@@ -1018,7 +1070,7 @@
     <content><![CDATA[<p>RESTfull <em>一种软件架构风格、设计风格</em>，不是标准，提供了一组设计原则和约束条件。</p>
 <a id="more"></a>
 
-<p>主要用于客户端和服务器交互类软件。基于这个风格设计的软件可以更简洁，更有层次，更易于实现缓存机制。<a href="https://baike.sogou.com/v73300762.htm?fromTitle=RESTful" target="_blank" rel="noopener">查看词条</a></p>
+<p>主要用于客户端和服务器交互类软件。基于这个风格设计的软件可以更简洁，更有层次，更易于实现缓存机制。<a href="https://baike.sogou.com/v73300762.htm?fromTitle=RESTful">查看词条</a></p>
 <h5 id="原则条件"><a href="#原则条件" class="headerlink" title="原则条件"></a>原则条件</h5><ol>
 <li>REST 指的是一组架构约束条件和原则。满足这些约束条件和原则的应用程序或设计就是 RESTful。</li>
 <li>Web应用程序最重要的REST原则是，客户端和服务器之间的交互在请求之间是（http请求）无状态的。客户端到服务器的每一个请求都必须包含理解请求所必需的信息。</li>
@@ -1036,7 +1088,7 @@
 <li><p>RESTful架构将服务器分成前端服务器和后端服务器两部分，前端服务器为用户提供无模型的视图；后端服务器为前端服务器提供接口。浏览器向前端服务器请求视图，通过视图中包含的AJAX函数发起接口请求获取模型。</p>
 </li>
 </ol>
-<h5 id="其他概念-更多"><a href="#其他概念-更多" class="headerlink" title="其他概念 (更多)"></a><a href="https://mp.weixin.qq.com/s?src=3&timestamp=1586138856&ver=1&signature=YaSPg7qpu0Qva1*0Fzsibkd*dUmaJaaRaWFCm3-pr1P-9LJdS0n17C0d*v1U1XkrVZ1MzAtvI5I*Euqi3Y9oBTCQGSLdTUalCdtpQVVTXLfAxGBasGoGcxLFxFzqUr7DADEmF*rpU-Hdyd0*7Pmvty3KNdVeA-ilKzurRx4iF5w=" target="_blank" rel="noopener">其他概念 (更多)</a></h5><h6 id="无状态"><a href="#无状态" class="headerlink" title="无状态"></a>无状态</h6><ol>
+<h5 id="其他概念-更多"><a href="#其他概念-更多" class="headerlink" title="其他概念 (更多)"></a><a href="https://mp.weixin.qq.com/s?src=3&timestamp=1586138856&ver=1&signature=YaSPg7qpu0Qva1*0Fzsibkd*dUmaJaaRaWFCm3-pr1P-9LJdS0n17C0d*v1U1XkrVZ1MzAtvI5I*Euqi3Y9oBTCQGSLdTUalCdtpQVVTXLfAxGBasGoGcxLFxFzqUr7DADEmF*rpU-Hdyd0*7Pmvty3KNdVeA-ilKzurRx4iF5w=">其他概念 (更多)</a></h5><h6 id="无状态"><a href="#无状态" class="headerlink" title="无状态"></a>无状态</h6><ol>
 <li>服务器设计接口，应当设计为无状态接口。即服务器端不保存任何与客户端相关的状态上下文信息。 客户端在每次调用接口时，需要提供足够的信息，以供服务器完成操作</li>
 <li>无状态设计中，服务端减少了保存客户端相关上下文数据，因此，一方面服务端能够更加容易实现动态扩展；减少了服务端从故障中恢复的任务量</li>
 <li>但无状态也会带来额外的问题。客户端将需要保存完整的用户状态信息，在每次与服务端交互时可能需要增加与用户状态相关的上下文信息，这样将导致请求数据的重复和增大</li>
@@ -1117,24 +1169,27 @@
 <hr>
 <blockquote>
 <h4 id="移动端UI框架"><a href="#移动端UI框架" class="headerlink" title="移动端UI框架"></a>移动端UI框架</h4></blockquote>
-<h5 id="Mint-UI（饿了么团队）"><a href="#Mint-UI（饿了么团队）" class="headerlink" title="Mint UI（饿了么团队）"></a><strong>Mint UI（饿了么团队）</strong></h5><p>中文官网：<a href="http://mint-ui.github.io/#!/zh-cn" target="_blank" rel="noopener">http://mint-ui.github.io/#!/zh-cn</a></p>
+<h5 id="Mint-UI（饿了么团队）"><a href="#Mint-UI（饿了么团队）" class="headerlink" title="Mint UI（饿了么团队）"></a><strong>Mint UI（饿了么团队）</strong></h5><p>中文官网：<a href="http://mint-ui.github.io/#!/zh-cn">http://mint-ui.github.io/#!/zh-cn</a></p>
 <p>描述：基于vue的移动端UI框架<br>基于vue</p>
-<p>GitHub地址：<a href="https://github.com/ElemeFE/mint-ui/" target="_blank" rel="noopener">https://github.com/ElemeFE/mint-ui/</a></p>
+<p>GitHub地址：<a href="https://github.com/ElemeFE/mint-ui/">https://github.com/ElemeFE/mint-ui/</a></p>
 <h5 id="Weui（微信官方设计团队）"><a href="#Weui（微信官方设计团队）" class="headerlink" title="Weui（微信官方设计团队）"></a>Weui（微信官方设计团队）</h5><p>描述：WeUI 为微信 Web 服务量身设计,是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信 Web 开发量身设计，可以令用户的使用感知更加统一。</p>
-<p>GitHub地址：<a href="https://github.com/weui/weui" target="_blank" rel="noopener">https://github.com/weui/weui</a></p>
-<h5 id="Pure"><a href="#Pure" class="headerlink" title="Pure"></a>Pure</h5><p>中文官网：<a href="https://www.purecss.cn/" target="_blank" rel="noopener">https://www.purecss.cn/</a><br>描述：纯CSS<br>美国雅虎公司出品的一组轻量级、响应式纯css模块，适用于任何Web项目。<br>GitHub：<a href="https://github.com/yahoo/pure/" target="_blank" rel="noopener">https://github.com/yahoo/pure/</a></p>
+<p>GitHub地址：<a href="https://github.com/weui/weui">https://github.com/weui/weui</a></p>
+<h5 id="Pure"><a href="#Pure" class="headerlink" title="Pure"></a>Pure</h5><p>中文官网：<a href="https://www.purecss.cn/">https://www.purecss.cn/</a><br>描述：纯CSS<br>美国雅虎公司出品的一组轻量级、响应式纯css模块，适用于任何Web项目。<br>GitHub：<a href="https://github.com/yahoo/pure/">https://github.com/yahoo/pure/</a></p>
 <blockquote>
 <h4 id="PC-端-UI框架"><a href="#PC-端-UI框架" class="headerlink" title="PC 端 UI框架"></a><strong>PC 端 UI框架</strong></h4></blockquote>
-<h5 id="Element-UI（饿了么团队）"><a href="#Element-UI（饿了么团队）" class="headerlink" title="Element UI（饿了么团队）"></a>Element UI（饿了么团队）</h5><p>官方地址：<a href="http://element-cn.eleme.io/#/zh-CN" target="_blank" rel="noopener">http://element-cn.eleme.io/#/zh-CN</a><br>描述：基于 Vue 2.0 的桌面端组件库<br>GitHub：<a href="https://github.com/ElemeFE/element" target="_blank" rel="noopener">https://github.com/ElemeFE/element</a></p>
-<h5 id="iView"><a href="#iView" class="headerlink" title="iView"></a>iView</h5><p>官网地址：<a href="https://www.iviewui.com/" target="_blank" rel="noopener">https://www.iviewui.com/</a><br>描述：一套基于 Vue.js 的高质量 UI 组件库。iView 是一套基于 Vue.js 的开源 UI 组件库，主要服务于 PC 界面的中后台产品。<br>GitHub地址：<a href="https://github.com/iview/iview" target="_blank" rel="noopener">https://github.com/iview/iview</a></p>
-<h5 id="layui"><a href="#layui" class="headerlink" title="layui"></a>layui</h5><p>官方地址：<a href="http://www.layui.com/" target="_blank" rel="noopener">http://www.layui.com/</a></p>
+<h5 id="Element-UI（饿了么团队）"><a href="#Element-UI（饿了么团队）" class="headerlink" title="Element UI（饿了么团队）"></a>Element UI（饿了么团队）</h5><p>官方地址：<a href="http://element-cn.eleme.io/#/zh-CN">http://element-cn.eleme.io/#/zh-CN</a><br>描述：基于 Vue 2.0 的桌面端组件库<br>GitHub：<a href="https://github.com/ElemeFE/element">https://github.com/ElemeFE/element</a></p>
+<h5 id="iView"><a href="#iView" class="headerlink" title="iView"></a>iView</h5><p>官网地址：<a href="https://www.iviewui.com/">https://www.iviewui.com/</a><br>描述：一套基于 Vue.js 的高质量 UI 组件库。iView 是一套基于 Vue.js 的开源 UI 组件库，主要服务于 PC 界面的中后台产品。<br>GitHub地址：<a href="https://github.com/iview/iview">https://github.com/iview/iview</a></p>
+<h5 id="layui"><a href="#layui" class="headerlink" title="layui"></a>layui</h5><p>官方地址：<a href="http://www.layui.com/">http://www.layui.com/</a></p>
 <p>描述：更多是为服务端程序员量身定做，你无需涉足各种前端工具的复杂配置，只需面对浏览器本身，让一切你所需要的元素与交互，从这里信手拈来。</p>
 <p>layui 兼容人类正在使用的全部浏览器（IE6/7除外），可作为 PC 端后台系统与前台界面的速成开发方案。</p>
-<p>GitHub：<a href="https://github.com/sentsin/layui/" target="_blank" rel="noopener">https://github.com/sentsin/layui/</a></p>
-<h5 id="Bootstrap"><a href="#Bootstrap" class="headerlink" title="Bootstrap"></a>Bootstrap</h5><p>中文官网：<a href="http://www.bootcss.com/" target="_blank" rel="noopener">http://www.bootcss.com/</a><br>描述：简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。</p>
-<p>GitHub地址：<a href="https://github.com/twbs/bootstrap" target="_blank" rel="noopener">https://github.com/twbs/bootstrap</a></p>
-<h5 id="jQuery-UI"><a href="#jQuery-UI" class="headerlink" title="jQuery UI"></a>jQuery UI</h5><p>官方网址：<a href="http://jqueryui.com/" target="_blank" rel="noopener">http://jqueryui.com/</a></p>
+<p>GitHub：<a href="https://github.com/sentsin/layui/">https://github.com/sentsin/layui/</a></p>
+<h5 id="Bootstrap"><a href="#Bootstrap" class="headerlink" title="Bootstrap"></a>Bootstrap</h5><p>中文官网：<a href="http://www.bootcss.com/">http://www.bootcss.com/</a><br>描述：简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。</p>
+<p>GitHub地址：<a href="https://github.com/twbs/bootstrap">https://github.com/twbs/bootstrap</a></p>
+<h5 id="jQuery-UI"><a href="#jQuery-UI" class="headerlink" title="jQuery UI"></a>jQuery UI</h5><p>官方网址：<a href="http://jqueryui.com/">http://jqueryui.com/</a></p>
 ]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
       <tags>
         <tag>UI</tag>
       </tags>
@@ -1146,7 +1201,7 @@
 <a id="more"></a>
 
 <blockquote>
-<p>学习地址指路 <a href="https://www.bilibili.com/video/BV1yW411q7GF" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1yW411q7GF</a></p>
+<p>学习地址指路 <a href="https://www.bilibili.com/video/BV1yW411q7GF">https://www.bilibili.com/video/BV1yW411q7GF</a></p>
 </blockquote>
 <h5 id="Http-传输数据存在的问题"><a href="#Http-传输数据存在的问题" class="headerlink" title="Http 传输数据存在的问题"></a>Http 传输数据存在的问题</h5><p>http协议传输，超文本传输协议HTTP协议被用于在Web浏览器和网络服务器之间传递信息。HTTP协议以明文方式发送内容，不提供任何方式的数据加密。所以如果黑客截取了Web浏览器和网站服务器之间的传输报文，就可以直接读取重要信息（密码 账号 卡号等）。</p>
 <h5 id="Https-简介"><a href="#Https-简介" class="headerlink" title="Https 简介"></a>Https 简介</h5><p>https协议，安全套接字层超文本传输协议HTTPS。是在HTTP的基础上加了SSL（Secure，Sockets，Layer，安全套接字层）。SSL依靠证书来验证服务器的身份，为浏览器和服务器之间的通信加密。</p>
@@ -1159,9 +1214,9 @@
 <li>http是超文本传输协议，信息是明文传输，连接很简单，https协议是由SSL+HTTP协议构建的 可进行 加密传输、身份认证的网络协议。安全性更高</li>
 <li>http 和 https 使用的是完全 不同 的连接方式，用的端口不一样。前者是 80 端口，后者是 443</li>
 </ol>
-<h5 id="SSL"><a href="#SSL" class="headerlink" title="SSL"></a><a href="https://baike.sogou.com/v214573.htm?fromTitle=ssl" target="_blank" rel="noopener">SSL</a></h5><ol>
+<h5 id="SSL"><a href="#SSL" class="headerlink" title="SSL"></a><a href="https://baike.sogou.com/v214573.htm?fromTitle=ssl">SSL</a></h5><ol>
 <li><p>定义</p>
-<p>SSL(Secure Sockets Layer<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=7628534&ss_c=ssc.citia" target="_blank" rel="noopener">安全套接层</a>,及其继任者<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=25967&ss_c=ssc.citiao.link" target="_blank" rel="noopener">传输层安全</a>（<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=101608365&ss_c=ssc.citiao.link" target="_blank" rel="noopener">Transport</a> Layer Security，TLS）是为网络通信提供安全及<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=340077&ss_c=ssc.citiao.link" target="_blank" rel="noopener">数据完整性</a>的一种安全协议。TLS与SSL在传输层与<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=16954&ss_c=ssc.citiao.link" target="_blank" rel="noopener">应用层</a>之间对网络连接进行加密。</p>
+<p>SSL(Secure Sockets Layer<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=7628534&ss_c=ssc.citia">安全套接层</a>,及其继任者<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=25967&ss_c=ssc.citiao.link">传输层安全</a>（<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=101608365&ss_c=ssc.citiao.link">Transport</a> Layer Security，TLS）是为网络通信提供安全及<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=340077&ss_c=ssc.citiao.link">数据完整性</a>的一种安全协议。TLS与SSL在传输层与<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=16954&ss_c=ssc.citiao.link">应用层</a>之间对网络连接进行加密。</p>
 </li>
 <li><p>作用</p>
 <p>认证用户和服务器，确保数据发送到正确的 客户机 和 服务器；</p>
@@ -1239,6 +1294,9 @@
 <h5 id="Https-优缺点"><a href="#Https-优缺点" class="headerlink" title="Https 优缺点"></a>Https 优缺点</h5><p>优点：安全性高</p>
 <p>缺点：收费，也不是绝对安全，耗电耗资源</p>
 ]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
       <tags>
         <tag>网络安全</tag>
       </tags>
@@ -1259,6 +1317,9 @@
 <li>提高网站速度：网站速度是搜索引擎排序的一个重要指标</li>
 </ul>
 ]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
       <tags>
         <tag>SEO</tag>
       </tags>
@@ -1270,10 +1331,10 @@
 <a id="more"></a>
 
 <h5 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h5><blockquote>
-<p>Ajax（Asynchronous <a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=2484&ss_c=ssc.citiao.link" target="_blank" rel="noopener">JavaScript</a> and XML），用于创建更好更快以及交互性更强的<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=159605&ss_c=ssc.citiao.link" target="_blank" rel="noopener">Web应用程序</a>的技术，与传统的Web应用相比，Ajax通过浏览器与服务器进行少量的数据交换就可以实现网页的异步更新，在不重新加载整个网页的情况下，即可对网页进行更新。</p>
+<p>Ajax（Asynchronous <a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=2484&ss_c=ssc.citiao.link">JavaScript</a> and XML），用于创建更好更快以及交互性更强的<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=159605&ss_c=ssc.citiao.link">Web应用程序</a>的技术，与传统的Web应用相比，Ajax通过浏览器与服务器进行少量的数据交换就可以实现网页的异步更新，在不重新加载整个网页的情况下，即可对网页进行更新。</p>
 </blockquote>
 <h5 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h5><blockquote>
-<p>JSON(JavaScriptObject Notation, JS 对象简谱) 是一种<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=7988600&ss_c=ssc.citiao.link" target="_blank" rel="noopener">轻量级</a>的数据交换格式，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。JSON（常用于数据交互）和XML（常用于文件配置）可读性不相上下。</p>
+<p>JSON(JavaScriptObject Notation, JS 对象简谱) 是一种<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=7988600&ss_c=ssc.citiao.link">轻量级</a>的数据交换格式，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。JSON（常用于数据交互）和XML（常用于文件配置）可读性不相上下。</p>
 </blockquote>
 <p>在JS语言中，一切都是对象，因此任何JS支持的类型，都可以通过JSON来表示，例如字符串、数字、对象数组等。</p>
 <ul>
@@ -1296,9 +1357,9 @@
 <p>// 以下均是字符串值，省略了两侧的引号，以便于展现内容</p>
 <p>{id: 1} // id是属性名称，必须加双引号<br>{‘id’: 1} // id是属性名称，必须用双引号(不能用单引号)<br>{“name”: ‘CodePlayer’} // name属性的值是字符串，必须用双引号(不能用单引号)</p>
 ]]></content>
-      <tags>
-        <tag>json ajax</tag>
-      </tags>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
   </entry>
   <entry>
     <title>JWT认证</title>
@@ -1308,7 +1369,7 @@
 
 <hr>
 <blockquote>
-<p>学习文档转自 <a href="https://www.cnblogs.com/haha12/p/11796456.html" target="_blank" rel="noopener">https://www.cnblogs.com/haha12/p/11796456.html</a></p>
+<p>学习文档转自 <a href="https://www.cnblogs.com/haha12/p/11796456.html">https://www.cnblogs.com/haha12/p/11796456.html</a></p>
 </blockquote>
 <hr>
 <h5 id="JWT简介"><a href="#JWT简介" class="headerlink" title="JWT简介"></a>JWT简介</h5><p>JSON Web Token（JWT）是一个开放的标准（RFC 7519），它定义了一个紧凑且自包含的方式，用于在各方之间作为JSON对象安全地传输信息。由于此信息是经过数字签名的，因此可以被验证和信任。</p>
@@ -1377,6 +1438,9 @@
 </li>
 </ol>
 ]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
       <tags>
         <tag>验证</tag>
       </tags>
@@ -1389,8 +1453,8 @@
 
 <hr>
 <blockquote>
-<p>博客：<a href="https://zhuanlan.zhihu.com/p/25080236" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/25080236</a></p>
-<p>github：<a href="https://github.com/tmpbook/django-with-vuejs" target="_blank" rel="noopener">https://github.com/tmpbook/django-with-vuejs</a></p>
+<p>博客：<a href="https://zhuanlan.zhihu.com/p/25080236">https://zhuanlan.zhihu.com/p/25080236</a></p>
+<p>github：<a href="https://github.com/tmpbook/django-with-vuejs">https://github.com/tmpbook/django-with-vuejs</a></p>
 </blockquote>
 <hr>
 <img src="/2020/03/28/Django-Vuejs/d1.png" class>]]></content>
@@ -1418,7 +1482,7 @@
 <h2 id="体验jquery的使用"><a href="#体验jquery的使用" class="headerlink" title="体验jquery的使用"></a>体验jquery的使用</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* 1. 查找元素的方法多种多样，非常灵活</span></span><br><span class="line"><span class="comment">* 2. 拥有隐式迭代特性，因此不再需要手写for循环了。</span></span><br><span class="line"><span class="comment">* 3. 完全没有兼容性问题。</span></span><br><span class="line"><span class="comment">* 4. 实现动画非常简单，而且功能更加的强大。</span></span><br><span class="line"><span class="comment">* 5. 代码简单、粗暴。</span></span><br><span class="line"><span class="comment">* */</span></span><br><span class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    $(<span class="string">"#btn1"</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        $(<span class="string">"div"</span>).show(<span class="number">200</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">    $(<span class="string">"#btn2"</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        $(<span class="string">"div"</span>).text(<span class="string">"我是内容"</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
 <h2 id="jquery到底是什么"><a href="#jquery到底是什么" class="headerlink" title="jquery到底是什么"></a>jquery到底是什么</h2><blockquote>
-<p>jQuery的官网 <a href="http://jquery.com/" target="_blank" rel="noopener">http://jquery.com/</a><br>jQuery就是一个js库，使用jQuery的话，会比使用JavaScript更简单。</p>
+<p>jQuery的官网 <a href="http://jquery.com/">http://jquery.com/</a><br>jQuery就是一个js库，使用jQuery的话，会比使用JavaScript更简单。</p>
 </blockquote>
 <p><strong>What is jQuery?</strong></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">jQuery is a fast, small, and feature-rich JavaScript library. </span><br><span class="line">It makes things like HTML document traversal and manipulation, </span><br><span class="line">event handling, animation, and Ajax </span><br><span class="line">much simpler with an easy-to-use API that works across a multitude of browsers. </span><br><span class="line">With a combination of versatility and extensibility, </span><br><span class="line">jQuery has changed the way that millions of people write JavaScript.</span><br></pre></td></tr></table></figure>
@@ -1426,7 +1490,7 @@
 <p>js库：把一些常用到的方法写到一个单独的js文件，使用的时候直接去引用这js文件就可以了。<br>（animate.js、common.js）</p>
 <p>我们知道了，jQuery其实就是一个js文件，里面封装了一大堆的方法方便我们的开发，<br>其实就是一个加强版的common.js，因此我们学习jQuery，其实就是学习jQuery这个js文件中封装的一大堆方法。</p>
 <h2 id="jquery的版本问题"><a href="#jquery的版本问题" class="headerlink" title="jquery的版本问题"></a>jquery的版本问题</h2><blockquote>
-<p>官网下载地址：<a href="http://jquery.com/download/" target="_blank" rel="noopener">http://jquery.com/download/</a><br>jQuery版本有很多，分为1.x 2.x 3.x<br>1.x和2.x版本jquery都不再更新版本了，现在只更新3.x版本。</p>
+<p>官网下载地址：<a href="http://jquery.com/download/">http://jquery.com/download/</a><br>jQuery版本有很多，分为1.x 2.x 3.x<br>1.x和2.x版本jquery都不再更新版本了，现在只更新3.x版本。</p>
 </blockquote>
 <p>大版本分类：</p>
 <ul>
@@ -1767,8 +1831,8 @@
 </ol>
 <p>懒加载插件</p>
 <h3 id="jquery-ui-js插件"><a href="#jquery-ui-js插件" class="headerlink" title="jquery.ui.js插件"></a>jquery.ui.js插件</h3><p>jQueryUI专指由jQuery官方维护的UI方向的插件。</p>
-<p>官方API：<a href="http://api.jqueryui.com/category/all/" target="_blank" rel="noopener">http://api.jqueryui.com/category/all/</a></p>
-<p>其他教程：<a href="http://www.runoob.com/jqueryui/jqueryui-tutorial.html" target="_blank" rel="noopener">jQueryUI教程</a></p>
+<p>官方API：<a href="http://api.jqueryui.com/category/all/">http://api.jqueryui.com/category/all/</a></p>
+<p>其他教程：<a href="http://www.runoob.com/jqueryui/jqueryui-tutorial.html">jQueryUI教程</a></p>
 <p>基本使用:</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//1.	引入jQueryUI的样式文件</span></span><br><span class="line"><span class="comment">//2.	引入jQuery</span></span><br><span class="line"><span class="comment">//3.	引入jQueryUI的js文件</span></span><br><span class="line"><span class="comment">//4.	使用jQueryUI功能</span></span><br></pre></td></tr></table></figure>
 
@@ -1797,6 +1861,9 @@
 
 
 ]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
       <tags>
         <tag>jQuery</tag>
       </tags>
@@ -1830,7 +1897,7 @@
 </blockquote>
 </li>
 </ul>
-<p><a href="https://cn.vuejs.org/v2/guide/instance.html#生命周期图示" target="_blank" rel="noopener">vue中的生命周期图</a><br><a href="http://www.race604.com/react-native-component-lifecycle/" target="_blank" rel="noopener">React Native 中组件的生命周期</a></p>
+<p><a href="https://cn.vuejs.org/v2/guide/instance.html#生命周期图示">vue中的生命周期图</a><br><a href="http://www.race604.com/react-native-component-lifecycle/">React Native 中组件的生命周期</a></p>
 <img src="/2020/03/26/React-4/React%E4%B8%AD%E7%BB%84%E4%BB%B6%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.png" class>
 
 <h5 id="defaultProps"><a href="#defaultProps" class="headerlink" title="defaultProps"></a>defaultProps</h5><blockquote>
@@ -1934,7 +2001,7 @@
 
 
 <h4 id="发表评论案例"><a href="#发表评论案例" class="headerlink" title="发表评论案例"></a>发表评论案例</h4><h4 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h4><h5 id="context特性"><a href="#context特性" class="headerlink" title="context特性"></a>context特性</h5><p>记住一串单词组合<code>getChildContextTypes</code><br>前3个、后3个、后两个<br>一个方法、两个静态属性</p>
-<h4 id="相关文章"><a href="#相关文章" class="headerlink" title="相关文章"></a>相关文章</h4><p><a href="https://facebook.github.io/react/docs/typechecking-with-proptypes.html" target="_blank" rel="noopener">类型校验</a><br><a href="https://reactjs.org/docs/animation.html#high-level-api-reactcsstransitiongroup" target="_blank" rel="noopener">Animation Add-Ons</a></p>
+<h4 id="相关文章"><a href="#相关文章" class="headerlink" title="相关文章"></a>相关文章</h4><p><a href="https://facebook.github.io/react/docs/typechecking-with-proptypes.html">类型校验</a><br><a href="https://reactjs.org/docs/animation.html#high-level-api-reactcsstransitiongroup">Animation Add-Ons</a></p>
 ]]></content>
       <tags>
         <tag>react</tag>
@@ -1957,6 +2024,9 @@
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>(name, age)&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name</span><br><span class="line">    	<span class="keyword">this</span>.age = age</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 实例方法</span></span><br><span class="line">    sayHello()&#123;</span><br><span class="line">        consolo.log(<span class="string">'大家好'</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">American</span> <span class="keyword">extends</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>(name, age)&#123;</span><br><span class="line">        <span class="keyword">super</span>(name, age)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> a1 = <span class="keyword">new</span> American(<span class="string">'Jack'</span>, <span class="number">20</span>)</span><br><span class="line"><span class="built_in">console</span>.log(a1)</span><br><span class="line"><span class="built_in">console</span>.log(a1.sayHello)</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Chinese</span> <span class="keyword">extends</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>(name, age, IDNumber)&#123;</span><br><span class="line">        <span class="keyword">super</span>(name, age)</span><br><span class="line">        <span class="keyword">this</span>.IDNumber = IDNumber	<span class="comment">//挂载子类独有的实例属性</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> c1 = <span class="keyword">new</span> Chinese(<span class="string">'张三'</span>, <span class="number">22</span>, <span class="string">'130020*****'</span>)</span><br><span class="line"><span class="built_in">console</span>.log(c1)</span><br><span class="line"><span class="built_in">console</span>.log(c1.sayHello)</span><br></pre></td></tr></table></figure>
 
 ]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
       <tags>
         <tag>es6</tag>
       </tags>
@@ -1981,6 +2051,9 @@
 </ol>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
       <tags>
         <tag>es6</tag>
       </tags>
@@ -2008,6 +2081,9 @@
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> list=<span class="built_in">document</span>.getElementsByTagName(<span class="string">'div'</span>);</span><br><span class="line"><span class="keyword">var</span> arr=[..list];</span><br></pre></td></tr></table></figure>
 
 ]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
       <tags>
         <tag>es6</tag>
       </tags>
@@ -2228,16 +2304,16 @@
 </ol>
 <h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>理解React中虚拟DOM的概念<br>理解React中三种Diff算法的概念<br>使用JS中createElement的方式创建虚拟DOM<br>使用ReactDOM.render方法<br>使用JSX语法并理解其本质<br>掌握创建组件的两种方式<br>理解有状态组件和无状态组件的本质区别<br>理解props和state的区别</p>
 <h4 id="相关文章"><a href="#相关文章" class="headerlink" title="相关文章"></a>相关文章</h4><ul>
-<li><a href="http://www.cnblogs.com/tim100/p/6050514.html" target="_blank" rel="noopener">React数据流和组件间的沟通总结</a></li>
-<li><a href="https://segmentfault.com/q/1010000005876655/a-1020000005876751" target="_blank" rel="noopener">单向数据流和双向绑定各有什么优缺点？</a></li>
-<li><a href="https://www.zhihu.com/question/29504639?sort=created" target="_blank" rel="noopener">怎么更好的理解虚拟DOM?</a></li>
-<li><a href="http://www.css88.com/react/index.html" target="_blank" rel="noopener">React中文文档 - 版本较低</a></li>
-<li><a href="http://blog.csdn.net/yczz/article/details/49886061" target="_blank" rel="noopener">React 源码剖析系列 － 不可思议的 react diff</a></li>
-<li><a href="http://www.infoq.com/cn/articles/react-dom-diff?from=timeline&isappinstalled=0" target="_blank" rel="noopener">深入浅出React（四）：虚拟DOM Diff算法解析</a></li>
-<li><a href="http://www.cocoachina.com/webapp/20150721/12692.html" target="_blank" rel="noopener">一看就懂的ReactJs入门教程（精华版）</a></li>
-<li><a href="http://www.ruanyifeng.com/blog/2016/06/css_modules.html" target="_blank" rel="noopener">CSS Modules 用法教程</a></li>
-<li><a href="http://blog.csdn.net/itzhongzi/article/details/66045880" target="_blank" rel="noopener">将MarkDown转换为HTML页面</a></li>
-<li><a href="https://jingyan.baidu.com/article/0320e2c1c9cf0e1b87507b26.html" target="_blank" rel="noopener">win7命令行 端口占用 查询进程号 杀进程</a></li>
+<li><a href="http://www.cnblogs.com/tim100/p/6050514.html">React数据流和组件间的沟通总结</a></li>
+<li><a href="https://segmentfault.com/q/1010000005876655/a-1020000005876751">单向数据流和双向绑定各有什么优缺点？</a></li>
+<li><a href="https://www.zhihu.com/question/29504639?sort=created">怎么更好的理解虚拟DOM?</a></li>
+<li><a href="http://www.css88.com/react/index.html">React中文文档 - 版本较低</a></li>
+<li><a href="http://blog.csdn.net/yczz/article/details/49886061">React 源码剖析系列 － 不可思议的 react diff</a></li>
+<li><a href="http://www.infoq.com/cn/articles/react-dom-diff?from=timeline&isappinstalled=0">深入浅出React（四）：虚拟DOM Diff算法解析</a></li>
+<li><a href="http://www.cocoachina.com/webapp/20150721/12692.html">一看就懂的ReactJs入门教程（精华版）</a></li>
+<li><a href="http://www.ruanyifeng.com/blog/2016/06/css_modules.html">CSS Modules 用法教程</a></li>
+<li><a href="http://blog.csdn.net/itzhongzi/article/details/66045880">将MarkDown转换为HTML页面</a></li>
+<li><a href="https://jingyan.baidu.com/article/0320e2c1c9cf0e1b87507b26.html">win7命令行 端口占用 查询进程号 杀进程</a></li>
 </ul>
 ]]></content>
       <tags>
@@ -2306,7 +2382,7 @@
       </tags>
   </entry>
   <entry>
-    <title>移动WEB开发之rem适配布局</title>
+    <title>移动Web开发--rem适配布局</title>
     <url>/2020/03/23/%E7%A7%BB%E5%8A%A8WEB%E5%BC%80%E5%8F%91%E4%B9%8Brem%E9%80%82%E9%85%8D%E5%B8%83%E5%B1%80/</url>
     <content><![CDATA[<p>rem 移动开发中重要的一种布局</p>
 <a id="more"></a>
@@ -2417,14 +2493,14 @@
 <p>方案2 更简单，因为flexible.js解决了很大一部分</p>
 ]]></content>
       <categories>
-        <category>CSS</category>
+        <category>Css</category>
       </categories>
       <tags>
         <tag>网页布局</tag>
       </tags>
   </entry>
   <entry>
-    <title>移动WEB开发之flex布局</title>
+    <title>移动Web开发--flex布局</title>
     <url>/2020/03/23/%E7%A7%BB%E5%8A%A8WEB%E5%BC%80%E5%8F%91%E4%B9%8Bflex%E5%B8%83%E5%B1%80/</url>
     <content><![CDATA[<h4 id="flex弹性布局"><a href="#flex弹性布局" class="headerlink" title="flex弹性布局"></a>flex弹性布局</h4><a id="more"></a>
 
@@ -2615,7 +2691,7 @@
 </ol>
 ]]></content>
       <categories>
-        <category>CSS</category>
+        <category>Css</category>
       </categories>
       <tags>
         <tag>网页布局</tag>
@@ -2664,6 +2740,9 @@
 </ol>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"> <span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age</span>) </span>&#123;</span><br><span class="line">​    <span class="keyword">this</span>.name = name</span><br><span class="line">​    <span class="keyword">this</span>.age = age</span><br><span class="line">​    <span class="keyword">this</span>.run = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="comment">/*实例方法*/</span></span><br><span class="line">​      <span class="built_in">console</span>.log(<span class="keyword">this</span>.name + <span class="string">'在运动'</span>)</span><br><span class="line">​    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  Person.prototype.sex = <span class="string">'男'</span></span><br><span class="line">  Person.prototype.work = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">​    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name + <span class="string">'在工作'</span>)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">var</span> p = <span class="keyword">new</span> Person(<span class="string">'xiaxa'</span>, <span class="number">25</span>)</span><br><span class="line">  p.run()</span><br><span class="line"></span><br><span class="line">  <span class="comment">// web类继承Person类  原型链加对象冒充的组合继承模式</span></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">Web</span>(<span class="params">name, age</span>) </span>&#123;</span><br><span class="line">​    Person.call(<span class="keyword">this</span>, name, age) <span class="comment">/*对象冒充继承，实例化子类可以给父类传参*/</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  Web.prototype = <span class="keyword">new</span> Person() <span class="comment">/*原型链实现继承*/</span></span><br><span class="line"><span class="comment">//Web.prototype = Person.prototypr /*也可以*/</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">var</span> w = <span class="keyword">new</span> Web(<span class="string">'lily'</span>, <span class="number">26</span>) <span class="comment">/*实例化子类的时候，没法给父类传参*/</span></span><br><span class="line">  w.run()</span><br><span class="line">  w.work()</span><br></pre></td></tr></table></figure>
 ]]></content>
+      <categories>
+        <category>Typescript</category>
+      </categories>
       <tags>
         <tag>TS</tag>
       </tags>
@@ -2705,6 +2784,9 @@
 </li>
 </ol>
 ]]></content>
+      <categories>
+        <category>Typescript</category>
+      </categories>
       <tags>
         <tag>TS</tag>
       </tags>
@@ -2773,6 +2855,9 @@
 </li>
 </ol>
 ]]></content>
+      <categories>
+        <category>Typescript</category>
+      </categories>
       <tags>
         <tag>TS</tag>
       </tags>
@@ -2861,7 +2946,7 @@
 </ul>
 </li>
 </ol>
-<h3 id="3-axios-用法"><a href="#3-axios-用法" class="headerlink" title="3. axios 用法"></a>3. axios 用法</h3><h4 id="3-1-axios-的基本特性"><a href="#3-1-axios-的基本特性" class="headerlink" title="3.1 axios 的基本特性"></a>3.1 axios 的基本特性</h4><p>axios（官网：<a href="https://github.com/axios/axios）是一个基于Promise用于浏览器和node.js的HTTP客户端" target="_blank" rel="noopener">https://github.com/axios/axios）是一个基于Promise用于浏览器和node.js的HTTP客户端</a></p>
+<h3 id="3-axios-用法"><a href="#3-axios-用法" class="headerlink" title="3. axios 用法"></a>3. axios 用法</h3><h4 id="3-1-axios-的基本特性"><a href="#3-1-axios-的基本特性" class="headerlink" title="3.1 axios 的基本特性"></a>3.1 axios 的基本特性</h4><p>axios（官网：<a href="https://github.com/axios/axios）是一个基于Promise用于浏览器和node.js的HTTP客户端">https://github.com/axios/axios）是一个基于Promise用于浏览器和node.js的HTTP客户端</a></p>
 <p>它有以下特性：</p>
 <ul>
 <li>支持浏览器和node.js</li>
@@ -2892,7 +2977,7 @@
 
 <ol start="2">
 <li><p>POST 传递参数</p>
-<p>axios.post(‘<a href="http://localhost:3000/axios’,{" target="_blank" rel="noopener">http://localhost:3000/axios’,{</a></p>
+<p>axios.post(‘<a href="http://localhost:3000/axios’,{">http://localhost:3000/axios’,{</a></p>
 <p>​    uname: ‘lily’</p>
 <p>​    pwd: 123</p>
 <p>}).then(function(ret){</p>
@@ -2909,7 +2994,7 @@
 <li>statusText：响应状态信息</li>
 </ul>
 <h4 id="3-5-axios-的全局配置"><a href="#3-5-axios-的全局配置" class="headerlink" title="3.5 axios 的全局配置"></a>3.5 axios 的全局配置</h4><p>axios.defaults.timeout = 3000； //超时时间</p>
-<p>axios.defaults.aseURL = ‘<a href="http://localhost:3000/app’" target="_blank" rel="noopener">http://localhost:3000/app’</a>; //默认地址</p>
+<p>axios.defaults.aseURL = ‘<a href="http://localhost:3000/app’">http://localhost:3000/app’</a>; //默认地址</p>
 <p>axios.defaults.headers[ ‘mytoken’ ] = ‘xxxx’ //设置请求头</p>
 <h4 id="3-6-axios-的拦截器"><a href="#3-6-axios-的拦截器" class="headerlink" title="3.6  axios 的拦截器"></a>3.6  axios 的拦截器</h4><ol>
 <li><p>请求拦截器</p>
@@ -2946,6 +3031,9 @@
 <p>​    console.log(ret)</p>
 <p>})</p>
 ]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
       <tags>
         <tag>promise axios 异步</tag>
       </tags>
@@ -2955,10 +3043,10 @@
     <url>/2020/03/13/vue%E6%90%AD%E5%BB%BAappweb/</url>
     <content><![CDATA[<h4 id="webapp-外卖系统（移动端）"><a href="#webapp-外卖系统（移动端）" class="headerlink" title="webapp 外卖系统（移动端）"></a>webapp 外卖系统（移动端）</h4><a id="more"></a>
 
-<p>！（前言：学习Vue项目搭建流程，记录心得（<strong>部分筆記為課件</strong>）。<strong>学习视频</strong> -&gt; <a href="https://www.bilibili.com/video/av49099807" target="_blank" rel="noopener">https://www.bilibili.com/video/av49099807</a></p>
+<p>！（前言：学习Vue项目搭建流程，记录心得（<strong>部分筆記為課件</strong>）。<strong>学习视频</strong> -&gt; <a href="https://www.bilibili.com/video/av49099807">https://www.bilibili.com/video/av49099807</a></p>
 <h4 id="1-使用-vue-cli-脚手架-搭建项目"><a href="#1-使用-vue-cli-脚手架-搭建项目" class="headerlink" title="1. 使用 vue-cli(脚手架)搭建项目"></a>1. 使用 vue-cli(脚手架)搭建项目</h4><ol>
 <li>Vue-cli 是 vue 官方提供的用于搭建基于 vue+webpack+es6 项目的脚手架工具 </li>
-<li>在线文档:<a href="https://github.com/vuejs/vue-cli" target="_blank" rel="noopener">https://github.com/vuejs/vue-cli</a> </li>
+<li>在线文档:<a href="https://github.com/vuejs/vue-cli">https://github.com/vuejs/vue-cli</a> </li>
 <li>操作: npm install -g vue-cli vue init webpack gshop cd gshop npm install npm run dev 访问: localhost:8080</li>
 </ol>
 <h4 id="2-项目结构分析"><a href="#2-项目结构分析" class="headerlink" title="2. 项目结构分析"></a>2. 项目结构分析</h4><p>gshop </p>
@@ -2980,8 +3068,8 @@
 <li>|– README.md: 应用描述说明的 readme 文件</li>
 </ul>
 <h4 id="3-编码测试与打包发布项目"><a href="#3-编码测试与打包发布项目" class="headerlink" title="3. 编码测试与打包发布项目"></a>3. 编码测试与打包发布项目</h4><ol>
-<li>编码测试 npm run dev 访问:<a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> 编码, 自动编译打包(HMR), 查看效果 </li>
-<li>打包发布 npm run build npm install -g serve serve dist 访问:<a href="http://localhost:5000" target="_blank" rel="noopener">http://localhost:5000</a></li>
+<li>编码测试 npm run dev 访问:<a href="http://localhost:8080">http://localhost:8080</a> 编码, 自动编译打包(HMR), 查看效果 </li>
+<li>打包发布 npm run build npm install -g serve serve dist 访问:<a href="http://localhost:5000">http://localhost:5000</a></li>
 </ol>
 <h4 id="4-項目源碼目錄設計"><a href="#4-項目源碼目錄設計" class="headerlink" title="4. 項目源碼目錄設計"></a>4. 項目源碼目錄設計</h4><ul>
 <li><p>src</p>
@@ -3089,6 +3177,9 @@
 </li>
 </ol>
 <h4 id="02"><a href="#02" class="headerlink" title="02"></a>02</h4>]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
       <tags>
         <tag>vue</tag>
       </tags>
@@ -3151,7 +3242,7 @@
 </ol>
 <h4 id="配置自动打包相关的参数"><a href="#配置自动打包相关的参数" class="headerlink" title="配置自动打包相关的参数"></a>配置自动打包相关的参数</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// package.json中配置</span></span><br><span class="line"><span class="comment">// --open 打包完成后自动打开浏览器页面</span></span><br><span class="line"><span class="comment">// --host 配置IP地址</span></span><br><span class="line"><span class="comment">// --port 配置端口</span></span><br><span class="line"><span class="string">"scripts"</span> : [</span><br><span class="line">	<span class="string">"dev"</span>: <span class="string">"webpack-dev-server --open --host 127.0.0.1 --port 8888"</span></span><br><span class="line">],</span><br></pre></td></tr></table></figure>
 
-<h4 id="loader打包非js模块"><a href="#loader打包非js模块" class="headerlink" title="loader打包非js模块"></a>loader打包非js模块</h4><p>​    <em>loader</em> 让 webpack 能够去处理那些非 JavaScript 文件（webpack 自身只理解 JavaScript）。loader 可以将所有类型的文件转换为 webpack 能够处理的有效<a href="https://www.webpackjs.com/concepts/modules" target="_blank" rel="noopener">模块</a>，然后你就可以利用 webpack 的打包能力，对它们进行处理。</p>
+<h4 id="loader打包非js模块"><a href="#loader打包非js模块" class="headerlink" title="loader打包非js模块"></a>loader打包非js模块</h4><p>​    <em>loader</em> 让 webpack 能够去处理那些非 JavaScript 文件（webpack 自身只理解 JavaScript）。loader 可以将所有类型的文件转换为 webpack 能够处理的有效<a href="https://www.webpackjs.com/concepts/modules">模块</a>，然后你就可以利用 webpack 的打包能力，对它们进行处理。</p>
 <p>本质上，webpack loader 将所有类型的文件，转换为应用程序的依赖图（和最终的 bundle）可以直接引用的模块。</p>
 <p><em>注意，loader 能够</em> <code>import</code> <em>导入任何类型的模块（例如</em> <code>.css</code> <em>文件），这是 webpack 特有的功能，其他打包程序或任务执行器的可能并不支持。我们认为这种语言扩展是有很必要的，因为这可以使开发人员创建出更准确的依赖关系图。</em></p>
 <ul>
@@ -3247,6 +3338,9 @@
 <p>6.创建vm的实例     <code>var vm = new Vue（ {el: &#39;#app&#39;, render: c=&gt; c(login) })</code></p>
 <p>7.在页面中创建一个id为app的div元素，作为我们vm实例要控制的区域</p>
 ]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
       <tags>
         <tag>webpack</tag>
       </tags>
@@ -3259,7 +3353,7 @@
 
 <hr>
 <blockquote>
-<p>学习文档转自<a href="http://blog.poetries.top/FE-Interview-Questions/base/" target="_blank" rel="noopener">http://blog.poetries.top/FE-Interview-Questions/base/</a></p>
+<p>学习文档转自<a href="http://blog.poetries.top/FE-Interview-Questions/base/">http://blog.poetries.top/FE-Interview-Questions/base/</a></p>
 </blockquote>
 <hr>
 <h5 id="基础版本"><a href="#基础版本" class="headerlink" title="基础版本"></a><strong>基础版本</strong></h5><ul>
@@ -3366,7 +3460,7 @@
 <li><strong>CSSOM</strong>：节点创建CSSOM树</li>
 </ol>
 </li>
-<li><p><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction" target="_blank" rel="noopener">根据DOM树和CSSOM树构建渲染树</a></p>
+<li><p><a href="https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction">根据DOM树和CSSOM树构建渲染树</a></p>
 <p>:</p>
 <ol>
 <li>从DOM树的根节点遍历所有<strong>可见节点</strong>，不可见节点包括：1）<code>script</code>,<code>meta</code>这样本身不可见的标签。2)被css隐藏的节点，如<code>display: none</code></li>
@@ -3401,6 +3495,9 @@
 <li>其它（可以拓展不同的知识模块，如跨域，web安全，<code>hybrid</code>模式等等内容）</li>
 </ol>
 ]]></content>
+      <categories>
+        <category>前端基础面经</category>
+      </categories>
       <tags>
         <tag>前端面试题</tag>
       </tags>
@@ -3415,6 +3512,9 @@
 <h4 id="2-let-obj"><a href="#2-let-obj" class="headerlink" title="2.let obj = {"></a>2.let obj = {</h4><h4 id><a href="#" class="headerlink" title="}"></a>}</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Array</span>.prototype.push = <span class="function"><span class="keyword">function</span> (<span class="params">val</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>[<span class="keyword">this</span>.length] = val</span><br><span class="line">    <span class="comment">//this.length在原来的基础上加1</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.length;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*[12, 23].push(100)</span></span><br><span class="line"><span class="comment">[12, 23, 100]</span></span><br><span class="line"><span class="comment">arr=[12,23]</span></span><br><span class="line"><span class="comment">arr[arr.length] = 100;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">let</span> obj = &#123;</span><br><span class="line">    <span class="number">2</span>: <span class="number">3</span>,</span><br><span class="line">    <span class="number">3</span>: <span class="number">4</span>,</span><br><span class="line">    length: <span class="number">2</span>,</span><br><span class="line">    push: <span class="built_in">Array</span>.prototype.push</span><br><span class="line">&#125;</span><br><span class="line">obj.push(<span class="number">1</span>)</span><br><span class="line">obj.push(<span class="number">2</span>)</span><br><span class="line"><span class="built_in">console</span>.log(obj)</span><br></pre></td></tr></table></figure>
 
 ]]></content>
+      <categories>
+        <category>前端基础面经</category>
+      </categories>
       <tags>
         <tag>前端面试题</tag>
       </tags>
@@ -3446,6 +3546,9 @@
 <h4 id="5-实现一个字符串匹配算法，从字符串S中，查找是否存在字符串T，若存在-返回所在位置，不存在返回-1"><a href="#5-实现一个字符串匹配算法，从字符串S中，查找是否存在字符串T，若存在-返回所在位置，不存在返回-1" class="headerlink" title="5.实现一个字符串匹配算法，从字符串S中，查找是否存在字符串T，若存在 返回所在位置，不存在返回-1."></a>5.实现一个字符串匹配算法，从字符串S中，查找是否存在字符串T，若存在 返回所在位置，不存在返回-1.</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">indexOf/includes <span class="comment">//内置方法</span></span><br><span class="line">~<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;			<span class="comment">//闭包</span></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    循环原始字符串中的每一项，让每一项从当前位置向后截取			T.length个字符，和T比较，如果不一样，继续循环；如果一样</span></span><br><span class="line"><span class="comment">    返回当前索引值即可，循环结束；</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">myIndexOf</span>(<span class="params">T</span>)</span>&#123;</span><br><span class="line">      <span class="comment">//this：S</span></span><br><span class="line">    	<span class="keyword">let</span> lenT = T.length,</span><br><span class="line">      	 	lenS = <span class="keyword">this</span>.length，</span><br><span class="line">        	res = <span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">if</span>(lenT&gt;lenS)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">      	<span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt;= lenS - lenT; i++)&#123;</span><br><span class="line">        	<span class="keyword">if</span>(<span class="keyword">this</span>.substr(i,lenT) === T)&#123;</span><br><span class="line">                res = i;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">         &#125;</span><br><span class="line">       	 <span class="keyword">return</span> res;<span class="comment">//从当前字符i，截取lenT个，并与T对比。</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//用正则的方式做</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">myIndexOf</span>(<span class="params">T</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">let</span> reg = <span class="keyword">new</span> <span class="built_in">RegExp</span>(T), <span class="comment">//这里是把T字符串变成了正则</span></span><br><span class="line">            res = reg.exec(<span class="keyword">this</span>);</span><br><span class="line">      	<span class="keyword">return</span> res === <span class="literal">null</span> ? <span class="number">-1</span> :res.index;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//把myIndexOf这个方法挂载到String的原型方法上</span></span><br><span class="line">    <span class="built_in">String</span>.prototype.myIndexOf = myIndexOf;</span><br><span class="line">&#125;();</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> S = <span class="string">'helloworld'</span>,</span><br><span class="line">	T = <span class="string">'world'</span>;</span><br><span class="line"><span class="built_in">console</span>.log(S.myIndexOf(T));</span><br></pre></td></tr></table></figure>
 
 ]]></content>
+      <categories>
+        <category>前端基础面经</category>
+      </categories>
       <tags>
         <tag>前端面试题</tag>
       </tags>
@@ -3453,7 +3556,7 @@
   <entry>
     <title>Nodejs相关</title>
     <url>/2020/02/18/Nodejs%E7%9B%B8%E5%85%B3/</url>
-    <content><![CDATA[<h4 id="NodeJS"><a href="#NodeJS" class="headerlink" title="NodeJS"></a>NodeJS</h4><p>Node.js® 是一个基于 <a href="https://v8.dev/" target="_blank" rel="noopener">Chrome V8 引擎</a> 的 JavaScript 运行时。</p>
+    <content><![CDATA[<h4 id="NodeJS"><a href="#NodeJS" class="headerlink" title="NodeJS"></a>NodeJS</h4><p>Node.js® 是一个基于 <a href="https://v8.dev/">Chrome V8 引擎</a> 的 JavaScript 运行时。</p>
 <a id="more"></a>
 
 <p>Node.js是一个基于Chrome JavaScript运行时建立的平台， 用于方便地搭建响应速度快、易于扩展的网络应用。Node.js 使用事件驱动， 非阻塞I/O 模型而得以轻量和高效，非常适合在分布式设备上运行的数据密集型的实时应用。</p>
@@ -3473,7 +3576,7 @@
     <url>/2020/02/18/mongodb%E7%9B%B8%E5%85%B3/</url>
     <content><![CDATA[<h4 id="Mongodb"><a href="#Mongodb" class="headerlink" title="Mongodb"></a>Mongodb</h4><a id="more"></a>
 
-<p>MongoDB是一个基于分布式文件存储的数据库，由<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=51909&ss_c=ssc.citiao.link" target="_blank" rel="noopener">C++语言</a>编写。旨在为WEB应用提供可扩展的高性能数据<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=63516207&ss_c=ssc.citiao.link" target="_blank" rel="noopener">存储解决方案</a>。</p>
+<p>MongoDB是一个基于分布式文件存储的数据库，由<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=51909&ss_c=ssc.citiao.link">C++语言</a>编写。旨在为WEB应用提供可扩展的高性能数据<a href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=63516207&ss_c=ssc.citiao.link">存储解决方案</a>。</p>
 <ul>
 <li><p>在node.js中开启mongodb       mongod –dbpath 存放data\db的路径  （F:/mongodb/data/db）</p>
 </li>
@@ -3520,7 +3623,7 @@ required: true</code></pre><p>  },……数据集合</p>
 <td>保存依赖</td>
 </tr>
 <tr>
-<td>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></td>
+<td>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org">https://registry.npm.taobao.org</a></td>
 <td>安装全局cnpm，使用淘宝镜像</td>
 </tr>
 <tr>
@@ -3636,8 +3739,7 @@ required: true</code></pre><p>  },……数据集合</p>
   <entry>
     <title>MGQ时尚风云中</title>
     <url>/2020/02/16/MGQ%E6%97%B6%E5%B0%9A%E9%A3%8E%E4%BA%91%E4%B8%AD/</url>
-    <content><![CDATA[<p><img src="/2020/02/16/MGQ%E6%97%B6%E5%B0%9A%E9%A3%8E%E4%BA%91%E4%B8%AD/F:%5Cproject%5CHexo%5Cthemes%5Cicarus%5Csource%5Cimages%5Cavatar.png" alt></p>
-<h2 id="《明星大侦探第五季》第七案《MGQ时尚风云中》分析"><a href="#《明星大侦探第五季》第七案《MGQ时尚风云中》分析" class="headerlink" title="《明星大侦探第五季》第七案《MGQ时尚风云中》分析"></a>《明星大侦探第五季》第七案《MGQ时尚风云中》分析</h2><p>今天这一期的案件是发生在MGQ时尚杂志社里。杂志社的同事们约好在晚上十点给何社长办生日会，但是却在10点10分的时候发现杂志社的甄主编死在了楼梯间。</p>
+    <content><![CDATA[<h2 id="《明星大侦探第五季》第七案《MGQ时尚风云中》分析"><a href="#《明星大侦探第五季》第七案《MGQ时尚风云中》分析" class="headerlink" title="《明星大侦探第五季》第七案《MGQ时尚风云中》分析"></a>《明星大侦探第五季》第七案《MGQ时尚风云中》分析</h2><p>今天这一期的案件是发生在MGQ时尚杂志社里。杂志社的同事们约好在晚上十点给何社长办生日会，但是却在10点10分的时候发现杂志社的甄主编死在了楼梯间。</p>
 <a id="more"></a>
 
 <ul>
@@ -3696,8 +3798,11 @@ required: true</code></pre><p>  },……数据集合</p>
 <p>至于撒和贾，并没有明确的计划，他们其实在在茶水间里等待机会。</p>
 <p>剩下的只有魏了。魏秘书在这个案件中非常关键的一点就是那条地毯。因为甄主编是一个非常苛刻的人，所以当她回来看到地毯不是她要求魏秘书换的那条一定会让魏秘书换掉，而魏秘书的计划就没有办法实施了。但是他没有想到甄主编会提前回来，反正他是打算杀掉所有人，所以提前杀掉甄主编也可以。而如果甄主编一直不出现，所有人一定要会等她出现，所以他伪造了甄主编出去的假象，而所有人可以放心吹蜡烛。</p>
 <p>以上就是对于本期《明星大侦探》的分析。</p>
-<p>本片文章转自 原创 姑且如此 <a href="javascript:void(0);">不得甚解</a> <em>1月2日</em>  <em>侵私删</em></p>
+<p>本片文章转自 原创 姑且如此 <a href>不得甚解</a> <em>1月2日</em>  <em>侵私删</em></p>
 ]]></content>
+      <categories>
+        <category>侦探案件</category>
+      </categories>
       <tags>
         <tag>案件</tag>
       </tags>
@@ -3705,19 +3810,19 @@ required: true</code></pre><p>  },……数据集合</p>
   <entry>
     <title>Hello World</title>
     <url>/2020/02/16/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 <h2 id="自定义样式"><a href="#自定义样式" class="headerlink" title="自定义样式"></a>自定义样式</h2><p>Hexo -&gt; source -&gt; _data -&gt; styles.styl</p>
 <p>开发者模式调试样式，然后复制样式名，粘贴到这里来，就可以覆盖原来的样式</p>
 ]]></content>
