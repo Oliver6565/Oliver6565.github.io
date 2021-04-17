@@ -1,19 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>vue基础--4小时</title>
+    <url>/2021/04/16/vue%E5%9F%BA%E7%A1%80-4%E5%B0%8F%E6%97%B6/</url>
+    <content><![CDATA[<p>vue基础快速复习</p>
+<a id="more"></a>
+
+<h3 id="一、vue基础"><a href="#一、vue基础" class="headerlink" title="一、vue基础"></a>一、vue基础</h3><h4 id="vue简介"><a href="#vue简介" class="headerlink" title="vue简介"></a>vue简介</h4><ol>
+<li>javascript框架，比jquery库更强大；</li>
+<li>更简单的DOM操作；（以前通过id获取元素，操作页面）</li>
+<li>响应式数据驱动</li>
+</ol>
+<h4 id="第一个vue程序"><a href="#第一个vue程序" class="headerlink" title="第一个vue程序"></a>第一个vue程序</h4><ol>
+<li><p>选择环境：开发环境：学习阶段使用</p>
+<p>​                    生产环境：mini版，更轻</p>
+</li>
+<li><p>声明式渲染</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span>&#123;&#123;message&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- &#123;&#123;&#125;&#125; 是插值表达式--&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript"><span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line">    </span><br><span class="line"><span class="actionscript">    el:<span class="string">"#app"</span>,</span></span><br><span class="line">    data:&#123;</span><br><span class="line"><span class="actionscript">        message:<span class="string">"哈哈"</span></span></span><br><span class="line">    &#125;,</span><br><span class="line">    methods:&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>其中</p>
+<p>el：挂载点（不要挂载到html、body元素上，也不要挂载到单标签上；要挂载到双标签上&lt;p&gt;&lt;/p&gt;、&lt;div&gt;&lt;/div&gt;）</p>
+<p>data：数据对象</p>
+<p>methods：方法</p>
+</li>
+</ol>
+<h3 id="二、本地应用"><a href="#二、本地应用" class="headerlink" title="二、本地应用"></a>二、本地应用</h3><h4 id="vue指令"><a href="#vue指令" class="headerlink" title="vue指令"></a>vue指令</h4><p>添加到html标签中，相当于给html标签增加一个属性</p>
+<ol>
+<li><p>内容绑定、事物绑定</p>
+<ul>
+<li><p>v-text：只会解析为文本；改变里面所有的文本</p>
+</li>
+<li><p>v-html：内容中有html结构，会被解析为标签</p>
+</li>
+<li><p>v-on：绑定事件,可简写为@；@click = “”; @mouseenter=””;</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span>&#123;&#123;message&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"单击"</span> @<span class="attr">click</span>=<span class="string">"btn1"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript"><span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line">    </span><br><span class="line"><span class="actionscript">    el:<span class="string">"#app"</span>,</span></span><br><span class="line">    data:&#123;</span><br><span class="line"><span class="actionscript">        message:<span class="string">"哈哈"</span></span></span><br><span class="line">    &#125;,</span><br><span class="line">    methods:&#123;</span><br><span class="line"><span class="actionscript">        btn1:<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;</span></span><br><span class="line"><span class="actionscript">            <span class="keyword">this</span>.message = <span class="string">"嘻嘻嘻嘻！"</span>,	<span class="comment">// 方法内部通过this，访问data中的数据</span></span></span><br><span class="line"><span class="actionscript">           	alert(<span class="string">"单击，我被弹出！"</span>)</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>显示切换、属性绑定</p>
+</li>
+<li><p>列表循环、表单元素绑定</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+  </entry>
+  <entry>
     <title>重绘和重排</title>
     <url>/2021/04/13/%E9%87%8D%E7%BB%98%E5%92%8C%E9%87%8D%E6%8E%92/</url>
     <content><![CDATA[<p>HTML页面进行重绘和重排（回流）</p>
 <a id="more"></a>
 
-<h3 id="浏览器运行机制"><a href="#浏览器运行机制" class="headerlink" title="浏览器运行机制"></a>浏览器运行机制</h3><p>1 构建DOM树    生成内容树（html结构）</p>
-<p>2 构建渲染树      css样式</p>
-<p>3 布局渲染树      从根节点(&lt;html&gt;)递归调用，计算每一个元素的大小，位置等；给出每个节点所在屏幕上出现的确定坐标</p>
-<p>4 绘制渲染树      遍历渲染树，使用UI层来绘制每个节点</p>
+<h3 id="浏览器运行机制："><a href="#浏览器运行机制：" class="headerlink" title="浏览器运行机制："></a>浏览器运行机制：</h3><ol>
+<li>构建DOM树    生成内容树（html结构）</li>
+<li>构建渲染树      css样式</li>
+<li>布局渲染树      从根节点(&lt;html&gt;)递归调用，计算每一个元素的大小，位置等；给出每个节点所在屏幕上出现的确定坐标</li>
+<li>绘制渲染树      遍历渲染树，使用UI层来绘制每个节点</li>
+</ol>
 <h3 id="重绘"><a href="#重绘" class="headerlink" title="重绘"></a>重绘</h3><p>​        重绘指的是，一个元素外观（颜色、背景）的改变，所触发的浏览器行为，即浏览器会根据新属性重新绘制页面</p>
 <h3 id="重排（回流）"><a href="#重排（回流）" class="headerlink" title="重排（回流）"></a>重排（回流）</h3><p>​        重排指的是，一个元素或多个元素因为规模尺寸、布局、隐藏等改变页面需要重新构建页面。注意：每个页面至少需要回流一次，就是第一次加载的时候。</p>
-<p>重排一定会导致重绘！！</p>
-<h3 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h3><p>1 浏览器自己的优化：浏览器会维护1个队列，</p>
+<p>重排一定会导致重绘！！重排和重绘都会导致浏览器速度变慢！</p>
+<h3 id="优化方法："><a href="#优化方法：" class="headerlink" title="优化方法："></a>优化方法：</h3><ol>
+<li>浏览器自己的优化：浏览器会维护1个队列，把所有会引起重绘和重拍的操作放在队列中，达到一定数量或者一定时间间隔，浏览器就会更新队列，进行一次批处理。（维护队列，后批处理）</li>
+<li>我们要注意的优化：减少对渲染树的操作，我们可以合并多次DOM和样式的修改，并减少对style样式的请求<ul>
+<li>直接改变元素的className</li>
+<li>需要多次重排的元素，position可以改为 absolute 或 fixed 。元素脱离了文档流，他的变化不会影响到其他元素了</li>
+</ul>
+</li>
+</ol>
 ]]></content>
       <categories>
         <category>前端</category>
@@ -3176,7 +3232,7 @@
 </ul>
 </li>
 </ol>
-<h4 id="02"><a href="#02" class="headerlink" title="02"></a>02</h4>]]></content>
+]]></content>
       <categories>
         <category>前端</category>
       </categories>
@@ -3496,7 +3552,7 @@
 </ol>
 ]]></content>
       <categories>
-        <category>前端基础面经</category>
+        <category>前端面经</category>
       </categories>
       <tags>
         <tag>前端面试题</tag>
@@ -3513,7 +3569,7 @@
 
 ]]></content>
       <categories>
-        <category>前端基础面经</category>
+        <category>前端面经</category>
       </categories>
       <tags>
         <tag>前端面试题</tag>
@@ -3547,7 +3603,7 @@
 
 ]]></content>
       <categories>
-        <category>前端基础面经</category>
+        <category>前端面经</category>
       </categories>
       <tags>
         <tag>前端面试题</tag>
