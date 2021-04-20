@@ -24,7 +24,7 @@
 <p>methods：方法</p>
 </li>
 </ol>
-<h3 id="二、本地应用"><a href="#二、本地应用" class="headerlink" title="二、本地应用"></a>二、本地应用</h3><h4 id="vue指令"><a href="#vue指令" class="headerlink" title="vue指令"></a>vue指令</h4><p>添加到html标签中，相当于给html标签增加一个属性</p>
+<h3 id="二、本地应用"><a href="#二、本地应用" class="headerlink" title="二、本地应用"></a>二、本地应用</h3><h4 id="vue指令"><a href="#vue指令" class="headerlink" title="vue指令"></a>vue指令</h4><p>添加到html标签中，相当于给html标签；元素增加一个属性</p>
 <ol>
 <li><p>内容绑定、事物绑定</p>
 <ul>
@@ -38,11 +38,42 @@
 </ul>
 </li>
 <li><p>显示切换、属性绑定</p>
+<ul>
+<li><p>v-show=“true/false”；布尔值；通过操纵样式；display:none；<strong>会导致重绘</strong></p>
+<p>v-show=”isShow” ；在vue实例中的data数据对象里面写 isShow:false</p>
+</li>
+<li><p>v-if=“表达式/数据对象” ； 根据表达式的真假，切换元素的显示和隐藏（操作dom元素）；<strong>会导致重绘和重排</strong></p>
+</li>
+<li><p>v-bind；设置单个元素的属性（比如 src title class）</p>
+<p>比如说给图片增加属性就用  v-bind : src = “数据对象”；然后v-bind可以省略；:src, :title(鼠标悬停显示出信息), :class</p>
+</li>
+</ul>
 </li>
 <li><p>列表循环、表单元素绑定</p>
+<ul>
+<li><p>v-for；循环生成列表结构；通常和<u>数组</u>结合使用</p>
+<p>v-for=”(item,index) in arr”</p>
+
+</li>
+</ul>
+</li>
+<li><p>v-on补充</p>
+<ul>
+<li>可以传参；@click=”add(2,5)”；后面对应方法加形参</li>
+<li>@keyup.enter=“sayHi”；敲回车键时会执行sayHi方法</li>
+</ul>
+</li>
+<li><p>v-model</p>
+<ul>
+<li>双向数据绑定，设置<strong>表单</strong>元素的值</li>
+</ul>
 </li>
 </ol>
-]]></content>
+<h4 id="记事本"><a href="#记事本" class="headerlink" title="记事本"></a>记事本</h4><p>v-for 渲染数组列表；根据数组形成列表结构</p>
+<p>v-model 获取用户输入的数据；</p>
+<p>v-on 绑定事件，@keyup.enter=”add”回车，add方法中新增数据；</p>
+<p>​                            删除数据：@click：”remove(index)”；方法中写：this.lists.splice(index,1)</p>
+<h3 id="三、网络应用"><a href="#三、网络应用" class="headerlink" title="三、网络应用"></a>三、网络应用</h3>]]></content>
       <categories>
         <category>Vue</category>
       </categories>
