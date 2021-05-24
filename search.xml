@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>yfd实习记录 1</title>
+    <url>/2021/05/24/yfd%E5%AE%9E%E4%B9%A0%E8%AE%B0%E5%BD%95-1/</url>
+    <content><![CDATA[<p>ok！这部分算是记录的序章，入职前的一些事情记录</p>
+<a id="more"></a>
+
+<h3 id="pt1-投简历–面试"><a href="#pt1-投简历–面试" class="headerlink" title="pt1 投简历–面试"></a>pt1 投简历–面试</h3><p>5月11中午吃饭的时候，看到猿辅导的招聘暑期兼职，工资可观，回去准备准备了简历就投了。当天下午那边发回了邮件通知周四面试。收到面试通知，加了hr微信，这才去百度搜了搜猿辅导公司的位置，去b站搜了搜猿辅导面试辅导老师的一些情况，也大致了解了猿辅导面试环节中所问的问题还是比较格式化的。“自我介绍”，“对辅导老师的看法”，“面对一些问题时你会怎么做”，hr小姐姐说明了加班的必要性，关于续保的占比。我对加班没有异议，公司说13-21点，其实应该是12-22点，这个时间我也能接受。（据说续报期是9-24点）</p>
+<h3 id="pt2-收到offer–租房"><a href="#pt2-收到offer–租房" class="headerlink" title="pt2 收到offer–租房"></a>pt2 收到offer–租房</h3><p>周五的时候就收到暑期兼职offer，入职时间是6月3号，入职的时候签订实习的劳务合同（要扣20%的税，到手4200左右），没有岗前培训，有岗后9天的培训。重庆猿辅导公司在朝天门来福士办公区A座，我在大学城这边，因为要租房子，16号的时候就和朋友一起去那边逛了逛（办公区没有权限是进不去的-..-）。19号的时候，和其他同事合租到了房子，租的3个月短租，押一付一。房子就在轻轨站出口，离来福士也10分钟左右的步行，已经很近了。</p>
+<h3 id="pt3-packaging-stuff"><a href="#pt3-packaging-stuff" class="headerlink" title="pt3 packaging stuff"></a>pt3 packaging stuff</h3><p>这边毕业设计和论文的事情算是基本结束了。我打包了一些冬季的衣服回家，又在网上买了一些办公所需的小物品和生活小物品。过几天要去那边线下签一个东西，顺便拿到房子钥匙，还有桌子板凳配齐了没有，顺便带一些衣服过去放着，学校宿舍这边就等17号回来再陆陆续续搬走。</p>
+<h3 id="pt4-上知乎了解辅导老师性质"><a href="#pt4-上知乎了解辅导老师性质" class="headerlink" title="pt4 上知乎了解辅导老师性质"></a>pt4 上知乎了解辅导老师性质</h3><p>说回之前面试猿辅导辅导老师的事情，我当时投简历的时候，其实已经有大概的感觉自己能过，只要自己认真准备面试问题，勇敢的去回答就好了。但真正收到offer，我才想到去真正了解辅导老师的性质，hr说70%的续报，其实很明显就是职业定位是销售性质占很大一部分。知乎上对于各大机构的辅导老师的吐槽我都大致看了看，优势就是薪资高，劣势就是工作时间长，压力很大，我暗自觉得我还是能撑住3个月的时间的。</p>
+<h3 id="pt5-抽卡"><a href="#pt5-抽卡" class="headerlink" title="pt5 抽卡"></a>pt5 抽卡</h3><p>去b站的塔罗占卜 事件结果那个抽过两次塔罗牌。关于前期能否进入状态：海神的女儿；关于三个月工作的感受：雪中的独角兽。两张牌都是好牌。</p>
+]]></content>
+      <categories>
+        <category>实习</category>
+      </categories>
+      <tags>
+        <tag>实习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>vue基础--4小时</title>
     <url>/2021/04/16/vue%E5%9F%BA%E7%A1%80-4%E5%B0%8F%E6%97%B6/</url>
     <content><![CDATA[<p>vue基础快速复习</p>
@@ -28,44 +47,40 @@
 <ol>
 <li><p>内容绑定、事物绑定</p>
 <ul>
-<li><p>v-text：只会解析为文本；改变里面所有的文本</p>
+<li><p><strong>v-text</strong>：只会解析为文本；改变里面<u>所有</u>的文本</p>
 </li>
-<li><p>v-html：内容中有html结构，会被解析为标签</p>
+<li><p><strong>v-html</strong>：内容中有html结构，会被解析为标签</p>
 </li>
-<li><p>v-on：绑定事件,可简写为@；@click = “”; @mouseenter=””;</p>
+<li><p><strong>v-on</strong>：绑定事件,可简写为@；@click = “”; @mouseenter=””;</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span>&#123;&#123;message&#125;&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">value</span>=<span class="string">"单击"</span> @<span class="attr">click</span>=<span class="string">"btn1"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript"><span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line">    </span><br><span class="line"><span class="actionscript">    el:<span class="string">"#app"</span>,</span></span><br><span class="line">    data:&#123;</span><br><span class="line"><span class="actionscript">        message:<span class="string">"哈哈"</span></span></span><br><span class="line">    &#125;,</span><br><span class="line">    methods:&#123;</span><br><span class="line"><span class="actionscript">        btn1:<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;</span></span><br><span class="line"><span class="actionscript">            <span class="keyword">this</span>.message = <span class="string">"嘻嘻嘻嘻！"</span>,	<span class="comment">// 方法内部通过this，访问data中的数据</span></span></span><br><span class="line"><span class="actionscript">           	alert(<span class="string">"单击，我被弹出！"</span>)</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
 <li><p>显示切换、属性绑定</p>
 <ul>
-<li><p>v-show=“true/false”；布尔值；通过操纵样式；display:none；<strong>会导致重绘</strong></p>
+<li><p><strong>v-show</strong>=“true/false”；布尔值；通过操纵样式；display:none；<strong>会导致重绘</strong></p>
 <p>v-show=”isShow” ；在vue实例中的data数据对象里面写 isShow:false</p>
 </li>
-<li><p>v-if=“表达式/数据对象” ； 根据表达式的真假，切换元素的显示和隐藏（操作dom元素）；<strong>会导致重绘和重排</strong></p>
+<li><p><strong>v-if=“表达式/数据对象”</strong> ； 根据表达式的真假，切换元素的显示和隐藏（操作dom元素）；<strong>会导致重绘和重排</strong></p>
 </li>
-<li><p>v-bind；设置单个元素的属性（比如 src title class）</p>
-<p>比如说给图片增加属性就用  v-bind : src = “数据对象”；然后v-bind可以省略；:src, :title(鼠标悬停显示出信息), :class</p>
+<li><p><strong>v-bind</strong>；设置单个元素的属性（比如 src title class）</p>
+<p>比如说给图片增加属性就用  v-bind : src = “数据对象”；然后v-bind可以省略；:src,  <u>:title</u>(<u>鼠标悬停显示出信息</u>), :class</p>
 </li>
 </ul>
 </li>
 <li><p>列表循环、表单元素绑定</p>
 <ul>
-<li><p>v-for；循环生成列表结构；通常和<u>数组</u>结合使用</p>
-<p>v-for=”(item,index) in arr”</p>
+<li><p><strong>v-for</strong>；循环生成列表结构；通常和<u>数组</u>结合使用</p>
+<p>v-for=”(item,index) in arr”  <u>index 是索引</u>；其中arr也可以是复杂数组对象；item.name、item.age去访问</p>
 
 </li>
-</ul>
+<li><p>*<em>v-on *</em>补充（事件）</p>
+<p>可以传参；@click=”add(2,5)”；后面对应方法加形参；@keyup.enter=“sayHi”；敲回车键时会执行sayHi方法</p>
 </li>
-<li><p>v-on补充</p>
-<ul>
-<li>可以传参；@click=”add(2,5)”；后面对应方法加形参</li>
-<li>@keyup.enter=“sayHi”；敲回车键时会执行sayHi方法</li>
-</ul>
+<li><p><strong>v-model</strong></p>
+<p>双向数据绑定，设置<strong>表单元素</strong>的值； input 、select 、checkbox 、textarea</p>
+<p>&lt;input type=”text” v-model=”msg”&gt;; data:{ msg:”双向绑定的数据” } </p>
 </li>
-<li><p>v-model</p>
-<ul>
-<li>双向数据绑定，设置<strong>表单</strong>元素的值</li>
 </ul>
 </li>
 </ol>
@@ -73,7 +88,8 @@
 <p>v-model 获取用户输入的数据；</p>
 <p>v-on 绑定事件，@keyup.enter=”add”回车，add方法中新增数据；</p>
 <p>​                            删除数据：@click：”remove(index)”；方法中写：this.lists.splice(index,1)</p>
-<h3 id="三、网络应用"><a href="#三、网络应用" class="headerlink" title="三、网络应用"></a>三、网络应用</h3>]]></content>
+<h3 id="三、网络应用"><a href="#三、网络应用" class="headerlink" title="三、网络应用"></a>三、网络应用</h3><p>ajax、promise 、.then、 axios</p>
+]]></content>
       <categories>
         <category>Vue</category>
       </categories>
